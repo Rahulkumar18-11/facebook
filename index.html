@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Authentication Hub</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+
+<body class="bg-light">
+<!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/xjgeokgd"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm mb-5">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">AuthApp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 bg-white p-4 rounded shadow-sm border">
+                <h1 class="text-center mb-5 text-primary">User Authentication Pages</h1>
+
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100 text-center border-primary">
+                            <div class="card-body">
+                                <h5 class="card-title">Login</h5>
+                                <p class="card-text">Access your account.</p>
+                                <a href="login.html" class="btn btn-primary">Go to Login</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100 text-center border-success">
+                            <div class="card-body">
+                                <h5 class="card-title">Sign Up</h5>
+                                <p class="card-text">Create a new account.</p>
+                                <a href="signup.html" class="btn btn-success">Go to Sign Up</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100 text-center border-warning">
+                            <div class="card-body">
+                                <h5 class="card-title">Forgot Password</h5>
+                                <p class="card-text">Recover your account access.</p>
+                                <a href="forgot_password.html" class="btn btn-warning text-white">Go to Forgot
+                                    Password</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100 text-center border-danger">
+                            <div class="card-body">
+                                <h5 class="card-title">Change Password</h5>
+                                <p class="card-text">Update your security credentials.</p>
+                                <a href="change_password.html" class="btn btn-danger">Go to Change Password</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
